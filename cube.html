@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这是我的个人网页">
+    <meta name="keywords" content="个人网页, 音乐, 游戏, 魔方, 书法, 电影">
+    <meta name="author" content="你的名字">
+    <title>我的网页</title>
+
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/light.jpg');
+            background-size: cover;
+            display: flex;
+        }
+
+        /* 侧边导航栏 */
+        nav {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* 主内容区 */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* 大图样式 */
+        .large-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .large-image img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* 游戏展示样式 */
+        .game-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .game-item {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .game-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-item img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .game-item h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+        }
+
+        .game-item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* 说明段落样式 */
+        .extra-info {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .extra-info p {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            nav {
+                width: 200px;
+                position: relative;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .game-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="music.html">音乐</a></li>
+            <li><a href="games.html">游戏</a></li>
+            <li><a href="cube.html">魔方</a></li>
+            <li><a href="calligraphy.html">书法</a></li>
+            <li><a href="movies.html">电影</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主内容区 -->
+    <div class="main-content">
+        <!-- 头部 -->
+        <header>
+            <h1>魔方</h1>
+        </header>
+
+        <!-- 主内容 -->
+        <main>
+            <h2>魔方</h2>
+            <p></p>
+        <!-- 大图展示区 -->
+            <div class="large-image">
+                <img src="image/cube.jpg" alt="大图展示">
+            </div>
+
+
+            <!-- 游戏展示区 -->
+            <div class="game-gallery">
+                <div class="game-item">
+                    <img src="image/cubePB.jpg" alt="CUBE">
+                    <h3>三阶PB（Personal Best）</h3>
+                    <p>(原来那个12s图已经找不到了...姑且拿一个图吧)</p>
+                    
+                </div>
+               
+            </div>
+            <!-- 说明段落 -->
+            <div class="extra-info">
+                <p>我也已经很久没认真玩这个玩具了，很久很久没有认真地练过七步十字了。初中的时候完全没背过CFOP，靠运气进过一次25s。然后直到高三了，我才重新拿起来。我不得不承认我拿起得并不很是时候，某种程度上来说也许干扰了我的复习。但是在那段枯燥乏味的时光里，难得地有一个分散情绪的地方，也不算太差吧。</p>
+				<p>当然，我还是没有背完CFOP，沟槽的Orientation相似的太多了，我现在估计又忘记了一些。我的七步十字发挥还是很不稳定，Permutation还是有几个手序卡卡的，First 2 Layer的慢速观察估计也退步了很多。可能我这么喜欢这个玩具的原因，是因为它给了我一些别处所没有的成就感，它和音游一样非常吃天赋，但是对普通人来说，在信息差对等的情况下，越努力就越出色。在旁人眼中，它是一个很神秘的存在，让人完全摸不着头脑。在那些人面前，这当然是一个很好的装逼神器，可是真正玩过的人就知道，并没有人懂你，他们只会惊叹，不会知道你勤奋练习的流畅指法是多么的优雅，也不知道你的观察和记忆精细入微，更不会理解那日夜联系中沁入魔方表面的肌肉记忆。</p>
+				<p>某种程度上来说，魔方有点像我。我明白自己天赋的平庸，但在他人眼里，我无比出色，他们不理解我为什么会对现状不满，就像他们不理解为什么我能12s复原一个魔方了还觉得自己菜。
+				我当然是菜的，我常和别人这样说，生怕他们因为我外表的光鲜而对我产生不必要的期待。</p>                           
+			</div>
+        </main>
+    </div>
+
+
+
+</body>
+</html>

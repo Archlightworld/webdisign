@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这是我的个人网页">
+    <meta name="keywords" content="个人网页, 音乐, 游戏, 魔方, 书法, 电影">
+    <meta name="author" content="你的名字">
+    <title>个人主页 - 我的网页</title>
+
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/light.jpg');
+            background-size: cover;
+            display: flex;
+        }
+
+        /* 侧边导航栏 */
+        nav {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* 主内容区 */
+        .main-content {
+            margin-left: 270px; /* 留出侧边导航栏的宽度 */
+            padding: 20px;
+            width: calc(100% - 270px); /* 调整宽度以适应侧边栏 */
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景，突出主内容 */
+            min-height: 100vh;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: calc(100% - 270px);
+            border-radius: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            nav {
+                width: 200px;
+                position: relative;
+            }
+
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="music.html">音乐</a></li>
+            <li><a href="games.html">游戏</a></li>
+            <li><a href="cube.html">魔方</a></li>
+            <li><a href="calligraphy.html">书法</a></li>
+            <li><a href="movies.html">电影</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主内容区 -->
+    <div class="main-content">
+        <!-- 头部 -->
+        <header>
+            <h1>对不起，我不知道您会突然到访</h1>
+        </header>
+
+        <!-- 主内容 -->
+        <main>
+          <h2>首页</h2>
+            <p>这里是新熊屋挖掘机学校，我是7212班的吴子闰，如你所见，我的专业是挖掘机技术。</p>
+            <p>本网页仅展示效果图，具体以实物为准，最终解释权归本人所有。</p>
+            <p>如对本网页的内容有任何异议，可到681寝室找本人进行修改，本人竭力保证内容让您满意。</p>
+        </main>
+    </div>
+
+
+
+</body>
+</html>

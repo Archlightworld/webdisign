@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这是我的个人网页">
+    <meta name="keywords" content="个人网页, 音乐, 游戏, 魔方, 书法, 电影">
+    <meta name="author" content="你的名字">
+    <title>音乐 - 我的网页</title> <!-- 这里将标题改为当前页面的主题 -->
+
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/light.jpg');
+            background-size: cover;
+            display: flex;
+        }
+
+        /* 侧边导航栏 */
+        nav {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* 主内容区 */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px); /* 调整宽度以适应侧边栏 */
+            background-color: rgba(255, 255, 255, 0.8);
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* 大图样式 */
+        .large-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .large-image img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* 音乐展示样式 */
+        .music-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .music-item {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .music-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .music-item img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .music-item h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+        }
+
+        .music-item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* 说明段落样式 */
+        .extra-info {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .extra-info p {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            nav {
+                width: 200px;
+                position: relative;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .music-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+	
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="music.html">音乐</a></li>
+            <li><a href="games.html">游戏</a></li>
+            <li><a href="cube.html">魔方</a></li>
+            <li><a href="calligraphy.html">书法</a></li>
+            <li><a href="movies.html">电影</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主内容区 -->
+    <div class="main-content">
+        <!-- 头部 -->
+        <header>
+            <h1>音乐</h1> <!-- 这里将标题改为当前页面的主题 -->
+        </header>
+
+        <!-- 主内容 -->
+        <main>
+            <h2>嘲哳</h2>
+			 <div class="extra-info">
+                <p>茅庐简陋，无华音以娱客，但有呕哑嘲哳之声，以聊慰君耳，不胜惭愧之至。</p>
+                
+            </div>
+          
+
+            <!-- 大图展示区 -->
+            <div class="large-image">
+                <img src="image/QQmusic.png" alt="音乐大图展示">
+            </div>
+
+            <!-- 音乐展示区 -->
+          <div class="music-gallery">
+                <div class="music-item">
+                    <img src="image/666.png" alt="古典音乐">
+                    <h3>古典音乐</h3>
+                    <p>初见于录放机，因痴迷月光奏鸣曲第一乐章而学钢琴，但是才疏学浅，还是不献丑了</p>
+					<p>船歌，蓝色多瑙河，月光（德彪西）...各家都听过一些，都有很喜欢的作品，但是不会很高深的乐理，就听个开心</p>
+                </div>
+                
+                <div class="music-item">
+                    <img src="image/lalaland.jpg" alt="配乐">
+                    <h3>配乐</h3>
+                    <p>配乐似乎是一种不太重要的元素，尤其是在精彩的电影中人们更容易被剧情吸引而非音乐——然而，我想如果你也和我一样在电影之后尝试去听电影配乐，我相信你会和我一样不太赞成那种看法。</p>
+					<p>这首Another Day of Sun是电影爱乐之城中开头的歌舞曲目，初看我并没有很被惊艳到，直到它出现在我的推介歌单中——自由热烈的气息随着节奏舞动，真的非常上头！</p>
+					<p>如果你看过电影《星际穿越》，你对于配乐如何塑造电影叙事一定会有更加深刻的认识——若隐若现的管风琴，是不是像主角的呼吸？当主角在地球和外太空这两个不一样的环境时，你会感受到汉斯季默对于合成器的独特应用——越靠近地球，你能感受到空气感更强了。</p>
+                </div>
+			  <div class="music-item">
+                    <img src="image/ttf.png" alt="音游曲">
+                    <h3>音游曲</h3>
+                    <p>音游曲不是土嗨，《Testify》为我作证。</p>
+				  <p>另：《Dantalion》《MARENOL》《Lyrith -迷宮リリス-》也是很有故事感的曲目</p>
+                </div>
+			  <div class="music-item">
+                    <img src="image/DavidTao.jpg" alt="陶喆">
+                    <h3>陶喆</h3>
+                    <p>华语乐坛的神！蓝黄黑三张专辑都很喜欢，《流沙》《小镇姑娘》《找自己》《普通朋友》《蝴蝶》《My Anata》《二十二》...不胜枚举！</p>
+                </div>
+			  <div class="music-item">
+                    <img src="image/Jay.png" alt="周杰伦">
+                    <h3>周杰伦</h3>
+                    <p>最喜欢他的《魔杰座》,《蛇舞》《乔克叔叔》这些感觉是很好的歌，但是并不流行。或许对于这个时代，听他的歌需要一点耐心，一般要听两次才知道喜不喜欢。</p>
+                </div>
+			  <div class="music-item">
+                    <img src="image/郭顶.png" alt="郭顶">
+                    <h3>郭顶</h3>
+                    <p>对于这张专辑，《水星记》不过是入门。</p>
+                </div>
+			  <div class="music-item">
+                    <img src="image/not for anyone.png" alt="林俊杰">
+                    <h3>林俊杰</h3>
+                    <p>当我的同学说出“他的歌都好难...”时，我差点拔刀，因为我以为他要加一个“听”。</p>
+                </div>
+                <div class="music-item">
+                    <img src="image/Taylor.jpg" alt="Taylor Swift">
+                    <h3>Taylor Swift</h3>
+                    <p>霉霉的音乐非常打动人心，我最初喜欢她的《Blank Space》,</p>
+					<p>后来对《All too well》《Willow》《Safe and Sound》等二见钟情，第一次听她的专辑是《Speak Now》，</p>
+					<p>23年那版的，你知道为什么。</p>
+                </div>
+			    <div class="music-item">
+                    <img src="image/LANADELRAY.png" alt="Lana Del Ray">
+                    <h3>Lana Del Ray</h3>
+                    <p>当我的每日三十首出现Salvotore时我就知道我这个号算是养成了</p>
+                </div>
+			    
+			  <div class="music-item">
+                    <img src="image/opus.png" alt="opus">
+                    <h3>坂本龙一</h3>
+                    <p>感觉心情被淋湿了</p>
+                </div>
+			  
+			  <div class="music-item">
+                    <img src="image/公主.png" alt="告五人">
+                    <h3>告五人</h3>
+                    <p>英伦风格乐队，喜欢这种文艺感，虽说可能没那么耐听。别拿什么《爱人错过》来说事，建议听听《温蒂公主的侍卫》《红》，你会发现这个乐队不沙雕。</p>
+                </div>
+			  <div class="music-item">
+                    <img src="image/inhuman.png" alt="inhuman">
+                    <h3>音乐盒</h3>
+                    <p>CS2也可以是一款音乐游戏——这是我第一个音乐盒，《dashstar》《reason》我也挺喜欢：）</p>
+				    <p>哎，我怎么被秒了？</p>
+                </div>
+			  
+			  <div class="music-item">
+                    <img src="image/linkinpark.png" alt="Linkin Park">
+                    <h3>Linkin Park</h3>
+                    <p>听得不多但是喜欢</p>
+                </div>
+			  <div class="music-item">
+                    <img src="image/Imagine Dragon.png" alt="Imagine Dragon">
+                    <h3>Imagine Dragon</h3>
+                    <p>《Believer》带我入门，《Shots》把我洗脑，《Demon》令我疼痛，《It's time》莫名治愈。</p>
+                </div>
+			  
+			  <div class="music-item">
+                    <img src="image/coldplay.png" alt="Coldplay">
+                    <h3>Coldplay</h3>
+                    <p>Don't be YELLOW,let's sing a song for life.</p>
+                </div>
+			  
+			  
+			  <div class="music-item">
+                    <img src="image/Troye.png" alt="Troye Sivan">
+                    <h3>Troye Sivan</h3>
+                    <p>Voice timbre is everything.</p>
+                </div>
+			  <div class="music-item">
+                    <img src="image/wellerman.png" alt="Wellerman">
+                    <h3>Wellerman</h3>
+                    <p>经典的歌不一样的演绎，挺喜欢这首的</p>
+                </div>
+			  <div class="music-item">
+                    <img src="image/vitality.png" alt="vitality">
+                    <h3>vitality</h3>
+                    <p>个性电台的独特魅力...我是土狗还不行吗？这个真上头啊...</p>
+                </div>
+            </div>
+			
+          <!-- 说明段落 -->
+            <div class="extra-info">
+                <p>除了这些音乐介绍外，我还喜欢探索不同类型的音乐，从古典音乐到现代流行，每一种音乐都有其独特的魅力。</p>
+                <p>音乐不仅仅是我的爱好，更是一种生活方式。无论是一个人的时候还是与朋友一起分享音乐，都能带来无穷的乐趣。</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这是我的个人网页">
+    <meta name="keywords" content="个人网页, 音乐, 游戏, 魔方, 书法, 电影">
+    <meta name="author" content="你的名字">
+    <title>我的网页</title>
+
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/light.jpg');
+            background-size: cover;
+            display: flex;
+        }
+
+        /* 侧边导航栏 */
+        nav {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* 主内容区 */
+        .main-content {
+            margin-left: 270px; /* 留出侧边导航栏的宽度 */
+            padding: 20px;
+            width: calc(100% - 270px); /* 调整宽度以适应侧边栏 */
+            background-color: rgba(255, 255, 255, 0.8);
+            min-height: 100vh;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* 大图样式 */
+        .large-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .large-image img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* 游戏展示样式 */
+        .game-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .game-item {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .game-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-item img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .game-item h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+        }
+
+        .game-item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* 说明段落样式 */
+        .extra-info {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .extra-info p {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            nav {
+                width: 200px;
+                position: relative;
+            }
+
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .game-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="music.html">音乐</a></li>
+            <li><a href="games.html">游戏</a></li>
+            <li><a href="cube.html">魔方</a></li>
+            <li><a href="calligraphy.html">书法</a></li>
+            <li><a href="movies.html">电影</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主内容区 -->
+    <div class="main-content">
+        <!-- 头部 -->
+        <header>
+            <h1>书法</h1>
+        </header>
+
+        <!-- 主内容 -->
+        <main>
+			<h2>游蛇</h2>
+			<div class="extra-info">
+                <p>吾资质平庸，复不勤于砥砺，久疏翰墨，字迹草率，勉强呈君一观。</p>
+                
+            </div>
+            
+            
+
+           
+
+            <!-- 游戏展示区 -->
+            <div class="game-gallery">
+                <div class="game-item">
+                    <img src="image/JAZ.jpg" alt="汲黯传">
+					<img src="image/JAZYT.png" alt="汲黯传">
+                    <h3>汲黯传</h3>
+                    <p>第一次临赵孟頫是写他的《洛神赋》，然后第二次是这个，虽然一个婉柔至极，一个刚正不屈，但是居然都符合文本大意，书家底力可见。</p>
+                </div>
+                <div class="game-item">
+                    <img src="image/ctsz.png" alt="草堂十志">
+                    <h3>文征明</h3>
+                    <p>第一次写古帖。被B站杨镇灵姐姐带进来的，刚开始真的觉得《草堂十志》好丑，完全不觉得好看。后面越写越觉得好看，又继续写了《琴赋》，《落花诗卷》《千字文》太多了没写完。兜兜转转这么多，最终觉得最开始的《草堂十志》才是真神。（这帖写了三次，属于最喜欢的一本了）</p>
+                </div>
+                <div class="game-item">
+                    <img src="image/LFJ.png" alt="灵飞经">
+                    <h3>灵飞经</h3>
+					<p>唐代抄经生的小楷真的好严格...这种戴着镣铐跳舞的灵动我不敢想象书生的基本功有多高...我完全没法学到精髓，只能学点表面功夫</p>
+                </div>
+                <div class="game-item">
+                    <img src="image/JCG.png" alt="九成宫">
+                    <h3>九成宫</h3>
+                    <p>偶听调侃：九成宫，九成都不成啊！结字严格冷峻，我也就只能摹其外形而难免失其笔意了。</p>
+                </div>
+				<div class="game-item">
+                    <img src="image/近期笔.jpg" alt="笔迹">
+                    <h3>近来笔迹</h3>
+                    <p>很久没写了，已经不会结字了。</p>
+                </div>
+				<div class="game-item">
+                    <img src="image/1.jpg" alt="笔迹">
+					<img src="image/2.jpg" alt="笔迹">
+                    <h3>随笔</h3>
+                    <p>心情不复潮湿，字迹也干瘪难看。</p>
+                </div>
+            </div>
+            <!-- 说明段落 -->
+            <div class="extra-info">
+				<p>由于时间久远，临摹的字迹已经很难找全，仅有的一张还仰托所赠好友悉心保管。近来久不碰笔墨，笔墨已经严重变形，您就图一乐看看吧。</p>
+            </div>
+        </main>
+    </div>
+
+
+
+</body>
+</html>
